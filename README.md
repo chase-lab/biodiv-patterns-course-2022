@@ -1,9 +1,9 @@
 # Biodiversity Patterns course 2022
 
 ## Course plan
-. Week 1: Theory and practice of metacommunity structure and simulation
-. Week 2: Measure of Biodiversity
-. Week 3: Measure of Functional Diversity
+- Week 1: Theory and practice of metacommunity structure and simulation
+- Week 2: Measure of Biodiversity
+- Week 3: Measure of Functional Diversity
 
 ## Team
 Dr. Paola Barajas
