@@ -6,12 +6,12 @@
 - Week 3: Measure of Functional Diversity
 
 ## Team
-Dr. Paola Barajas
-Dr. Shane Blowes
-Pr. Dr. Jon Chase
-Dr. Daniela Hoss
-Dr. Roel van Klink
-Dr. Emma Ladouceur
-Dr. Alban Sagouis
-Dr. Kimberly Thompson
-Dr. Wubing Xu
+Dr. Paola Barajas  
+Dr. Shane Blowes  
+Pr. Dr. Jon Chase  
+Dr. Daniela Hoss  
+Dr. Roel van Klink  
+Dr. Emma Ladouceur  
+Dr. Alban Sagouis  
+Dr. Kimberly Thompson  
+Dr. Wubing Xu  
