@@ -1,4 +1,4 @@
-## Project
+# Project
 
-# Helpdesk hour - R questions
-# Helpdesk hour - Ecology questions
+## Helpdesk hour - R questions
+## Helpdesk hour - Ecology questions
