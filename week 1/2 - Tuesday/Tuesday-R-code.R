@@ -368,7 +368,7 @@ for(t in 2:tmax){
   # what about stochastic population growth?
   # rN <- round(rnorm(1, 0, 0.2) * N[t-1,])
   N[t, ] <- N[t-1] + rN
-  E <- rbinom(n = ncol(N), size = N[t, ], prob = d)
+  E <- rbinom(n = ncol(N), size = N[t, ], prob = a)
   I <- numeric(P)
   for(p in 1:P){
     if(E[p]>0) {
