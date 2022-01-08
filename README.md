@@ -12,30 +12,27 @@ Dr. Paola Barajas (paola.barajas@idiv.de); Dr. Shane Blowes (shane.blowes@idiv.d
 ## Course plan:
 ### Week 1: (January 10-14): Mechanisms of biodiversity: Metacommunities Theory and Practice
 
-#### Monday: Lecture, Reading, Discussion, Exercise (Jon)
-#### Tuesday: Introduction to modelling, metacommunity theory, simulations, and exercises (Shane)
-#### Wednesday: Metacommunity analysis: variation partitioning lecture and exercises (Wubing)(morning); from GLMs to jSDM; lecture and exercises (Kim)(afternoon)
-#### Thursday: Independent project/analysis: simulations, analyses of empirical and/or simulated data (Kim/Wubing/Shane)
-#### Friday: Independent project/analysis (Morning): Presentation/discussion (Afternoon)
+##### Monday: Lecture, Reading, Discussion, Exercise (Jon)
+##### Tuesday: Introduction to modelling, metacommunity theory, simulations, and exercises (Shane)
+##### Wednesday: Metacommunity analysis: variation partitioning lecture and exercises (Wubing)(morning); from GLMs to jSDM; lecture and exercises (Kim)(afternoon)
+##### Thursday: Independent project/analysis: simulations, analyses of empirical and/or simulated data (Kim/Wubing/Shane)
+##### Friday: Independent project/analysis (Morning): Presentation/discussion (Afternoon)
 
 ### Week 2: (January 17-21): Measuring and comparing patterns of (taxonomic) diversity
 
-#### Monday: Lecture, Reading, Discussion, Exercise (Jon)
-#### Tuesday: Calculating biodiversity metrics (richness, evenness, Hill numbers); mobr lesson (Roel)
-#### Wednesday: Effects of sampling on biodiversity measures (species accumulation curves, etc); mobsim (Alban)
-#### Thursday: Independent project/analysis: simulations, analyses of empirical and/or simulated data (Alban, Roel)
-#### Friday: Independent project/analysis (Morning): Presentation/discussion (Afternoon)
+##### Monday: Lecture, Reading, Discussion, Exercise (Jon)
+##### Tuesday: Calculating biodiversity metrics (richness, evenness, Hill numbers); mobr lesson (Roel)
+##### Wednesday: Effects of sampling on biodiversity measures (species accumulation curves, etc); mobsim (Alban)
+##### Thursday: Independent project/analysis: simulations, analyses of empirical and/or simulated data (Alban, Roel)
+##### Friday: Independent project/analysis (Morning): Presentation/discussion (Afternoon)
 
+### Week 3: (January 24-28): Functional Diversity and Biodiversity and Ecosystem Functioning (BEF)
 
-Week 2 (January 17-21): 
-Monday: Lecture, Reading, Discussion, Exercise (Jon)
-Tuesday: 
-Wednesday:  - introduction to independent work 
-Thursday: Independent analysis (datasets needed) (Roel/Alban)
-Friday: Independent analysis (Morning): Afternoon presentation/discussion
-Themes: sampling effort 
+##### Monday: Lecture, Reading, Discussion, Exercise (Jon)
+##### Tuesday: Measures of Functional Diversity (Hill Numbers) (Paola)
+##### Wednesday: Biodiversity, Metacommunity Assembly, and Ecosystem Functions (biomass, stability) (Daniela, Emma)
+##### Thursday: Independent project/analysis: simulations, analyses of empirical and/or simulated data (Paola, Daniela, Emma)
+##### Friday: Independent project/analysis (Morning): Presentation/discussion (Afternoon)
 
-- Week 2: Measures, Metrics and Comparisons of Biodiversity
-- Week 3: Measure of Functional Diversity and Biodiversity and Ecosystem Functioning (BEF)
 
 
