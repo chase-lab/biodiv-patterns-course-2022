@@ -1,3 +1,1 @@
-## Morning session
-
-## Afternoon session  
+ 
