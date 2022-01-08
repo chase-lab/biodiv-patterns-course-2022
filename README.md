@@ -2,8 +2,8 @@
 
 ## Course plan
 - Week 1: Theory and practice of metacommunity structure and simulation
-- Week 2: Measure of Biodiversity
-- Week 3: Measure of Functional Diversity
+- Week 2: Measures, Metrics and Comparisons of Biodiversity
+- Week 3: Measure of Functional Diversity and Biodiversity and Ecosystem Functioning (BEF)
 
 ## Team
 Dr. Paola Barajas  
