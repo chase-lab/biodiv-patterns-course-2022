@@ -34,5 +34,6 @@ Dr. Paola Barajas (paola.barajas@idiv.de); Dr. Shane Blowes (shane.blowes@idiv.d
 ##### Thursday: Independent project/analysis: simulations, analyses of empirical and/or simulated data (Paola, Daniela, Emma)
 ##### Friday: Independent project/analysis (Morning): Presentation/discussion (Afternoon)
 
-
+## Course Expectations and Grading:
+The learning objectives of this course will be primarily achieved by course attendence and participation in excercises and activities. Attendence/participation is mandatory. Grading will be primarily through course attendence and participation in 'in class' activities and short weeekly independent projects
 
