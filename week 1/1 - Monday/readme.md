@@ -19,7 +19,7 @@ And here are a few sites that can help with winter ID (look at the buds and bark
 - https://www.pflanzen-vielfalt.net/bestimmen-sammeln/baumbestimmungshilfe/knospenbestimmung/
 - https://www.baumkunde.de/baumbestimmung/laubhoelzer/bestimmung-knospen.php
 
-## Part 2. 12.00-13.00.  Meet in Seminar room (Große Steinstrasse 79/80, 2nd floor, Interim of Institute for Geobotany)
+## Part 2. 12.00-13.00.  Discussion in Seminar room (Große Steinstrasse 79/80, 2nd floor, Interim of Institute for Geobotany)
 
 Discussion about observations and data from forest sampling
 
