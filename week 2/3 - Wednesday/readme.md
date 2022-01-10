@@ -1,6 +1,6 @@
 ## Morning session
 
-### GitHub introduction
+### Introduction (to an introduction to) GitHub
 
 ### MoBsim
 Please, BEFORE THE CLASS, run the following R code to install packages in preparation of our exercise with MoBsim:
