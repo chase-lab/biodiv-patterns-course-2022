@@ -9,7 +9,7 @@ library(cowplot)
 # 2) b == d
 # 3) b < d
 
-# initial population size 
+# initial population size
 N0 = 100
 # per-capita birth rate
 b = 1.2
@@ -21,7 +21,7 @@ N[1] <- N0
 
 # simulate population growth for 10 year
 for(t in 1:9) {
-  N[t+1] = N[t] + (b-d) * N[t] 
+  N[t+1] = N[t] + (b-d) * N[t]
 }
 
 # b > d results
@@ -35,7 +35,7 @@ N[1] <- N0
 
 # simulate population growth for 10 year
 for(t in 1:9) {
-  N[t+1] = N[t] + (b-d) * N[t] 
+  N[t+1] = N[t] + (b-d) * N[t]
 }
 N_static <-  N
 rm(N)
@@ -47,13 +47,13 @@ N[1] <- N0
 
 # simulate population growth for 10 year
 for(t in 1:9) {
-  N[t+1] = N[t] + (b-d) * N[t] 
+  N[t+1] = N[t] + (b-d) * N[t]
 }
 N_shrinking <-  N
 rm(N)
 
 # plot results
-plot(1:length(N_growing), N_growing, type = 'l', 
+plot(1:length(N_growing), N_growing, type = 'l',
      ylim = c(0, 600),
      xlab = 'Time [years]',
      ylab = 'Population size or density')
@@ -64,11 +64,11 @@ lines(1:length(N_shrinking), N_shrinking, type = 'l')
 # Stochasticity: extending models to include structured randomness.
 # - Dennis et al 1995 Ecological Monographs; Hilborn & Mangel 1997 The Ecological Detective
 
-# Demographic and environmental stochasticity are most commonly discussed forms of stochasticity in Ecology 
+# Demographic and environmental stochasticity are most commonly discussed forms of stochasticity in Ecology
 # other types: catastrophes (e.g., Lande 1993 Am Nat); measurement or observation error (e.g., Denis et al 1991 Ecol Monographs;
 # Knape & de Valpine 2011 Ecol Lett);  process error (e.g., Denis et al 1991 Ecol Monographs; Thibaut & Connolly 2020 Ecology)
 
-# Demographic stochasticity describes realised variability in demographic processes such as births, deaths and migration due 
+# Demographic stochasticity describes realised variability in demographic processes such as births, deaths and migration due
 # to their probabilistic nature (see also Clark 2009 TREE for argument that stochastic forces exist only in models; e.g., "...processes perceived
 # as stochastic at one level of abstraction have explanations at another.").
 
@@ -78,14 +78,14 @@ lines(1:length(N_shrinking), N_shrinking, type = 'l')
 # Extend geometric population model to include demographic stochasticity
 
 # We have to decide how to change our model to include stochasticity. For example, we could assume that the parameter values of both the birth
-# and death processes in the geometric growth model as random draws from probability distributions. 
+# and death processes in the geometric growth model as random draws from probability distributions.
 # Here, we'll instead use the approach taken in the metacommunity model
 # that we will study later today (see also Adler & Drake 2008 Am Nat, Shoemaker et al. 2020 Ecology).
 
 # We assume N[t+1] ~ Pois(lambda = N[t] + (b-d)*N[t]),
-# N[t+1], the population size next year, is a random draw from a 
-# Poisson distribution with lambda (i.e., the one and only parameter of the Poisson distribution) 
-# equal to the expected population size under our model of geometric growth. 
+# N[t+1], the population size next year, is a random draw from a
+# Poisson distribution with lambda (i.e., the one and only parameter of the Poisson distribution)
+# equal to the expected population size under our model of geometric growth.
 
 # define per-capita birth rate
 b = 1.2
@@ -98,12 +98,12 @@ N[1] <- N0
 
 # simulate population growth for 10 years
 for(t in 1:9) {
-  
+
   N[t+1] = rpois(n = 1,
-                 lambda = N[t] + (b-d) * N[t]) 
+                 lambda = N[t] + (b-d) * N[t])
 }
 
-plot(1:length(N_growing), N_growing, type = 'l', 
+plot(1:length(N_growing), N_growing, type = 'l',
      ylim = c(0, 600),
      xlab = 'Time [years]',
      ylab = 'Population size or density')
@@ -115,17 +115,17 @@ nsims = 20
 nyears = 9
 N_matrix = matrix(data = NA,
                   nrow = nsims,
-                  ncol = nyears + 1, 
+                  ncol = nyears + 1,
                   byrow = TRUE)
 # initial population
 N_matrix[,1] = N0
 
 for(sim in 1:nsims){
-  # print counter to screen 
+  # print counter to screen
   print(paste('simulation ', sim, 'of ', nsims))
   for(t in 1:nyears){
     N_matrix[sim, t+1] = rpois(n = 1,
-                   lambda = N_matrix[sim, t] + (b-d) * N_matrix[sim, t]) 
+                   lambda = N_matrix[sim, t] + (b-d) * N_matrix[sim, t])
   }
 }
 
@@ -145,7 +145,7 @@ lines(1:length(N_growing), N_growing, lwd = 3)
 # where c scales the magnitude of the environmental variation phi[t] ~ N(0,1).
 
 # set c = (1 - a^2)^0.5, which means var(sigma) is equal for all values of a.
-# a controls autocorrelation: 
+# a controls autocorrelation:
 # 0 < a < 1 environmental fluctuations are positively correlated,
 # -1 < a < 0 environmental fluctuations are negatively correlated,
 # a = 0, environmental fluctuations are uncorrelated.
@@ -173,7 +173,7 @@ uncorrelated_sigma = sigma;
 rm(sigma)
 
 # positive autocorrelation
-a = 1 
+a = 1
 sigma <- NULL
 sigma[1] = 0
 # loop to create environmental fluctuations
@@ -206,10 +206,10 @@ lines(1:(nyears+1), neg_corr_sigma, col = 3, lty = 3)
 abline(c(0,0), lty = 2)
 
 
-# Exercises: 
+# Exercises:
 # 1) Extend model to include demographic and environmental stochasticity (see Shoemaker et al. 2020 Ecology).
 
-# 2) How would you measure the impact of including stochasticity in a model of geometric growth using simulations? 
+# 2) How would you measure the impact of including stochasticity in a model of geometric growth using simulations?
 # Hint: it can be done using linear (statistical) models; see e.g., Blowes & Connolly 2012 Ecological Applications.
 # Use simulations and linear models to quantify the impact of including different combinations of demographic and environmental stochasticity.
 
@@ -219,7 +219,7 @@ abline(c(0,0), lty = 2)
 ##---------------------------------------------------------------------------------------------------------------------------------------------------
 ## Metacommunity dynamics
 
-# But first, metapopulation dynamics 
+# But first, metapopulation dynamics
 
 # Simulate landscape of discrete patches
 # Number of sites/patches (P)
@@ -252,13 +252,13 @@ d <- 0.1
 plot(x = 1:M,
      y = exp(-d*(1:M)),
      ylim=c(0,1),
-     col = 1, 
+     col = 1,
      type = 'b')
 
 lines(x = 1:M,
       y = exp(-(d*2)*(1:M)), # change the d value to see how function shape changes
       ylim=c(0,1),
-      col = 2, 
+      col = 2,
       type = 'b')
 
 
@@ -274,9 +274,9 @@ disp_mat <- apply(disp_mat, 1, function(x) x / sum(x))
 colSums(disp_mat)
 
 # visualise
-landscape <- ggplot(as_tibble(coords) %>% 
+landscape <- ggplot(as_tibble(coords) %>%
          rename(x = x1,
-                y = x2) %>% 
+                y = x2) %>%
          mutate(patch = 1:nrow(coords))) +
   geom_label(aes(x = x, y = y, label = patch)) +
   coord_fixed() +
@@ -295,12 +295,12 @@ connectivity <- as_tibble(disp_mat) %>%
   scale_fill_viridis_c() +
   coord_fixed() +
   theme_bw()
-  
+
 plot_grid(landscape,
           connectivity)
 
 
-# Simulate dynamics 
+# Simulate dynamics
 #==================
 
 # Distribute it on the landscape: initialise model
@@ -322,10 +322,10 @@ rN <- round(r * N)
 N <- N + rN
 
 # Calculate number of emmigrants ()
-E <- round(d * N)
+E <- round(a * N)
 
 # stochastic alternative
-E <- rbinom(length(N), size = N, prob = d)
+E <- rbinom(length(N), size = N, prob = a)
 
 # create immigration vector (to store number of immigrants)
 I <- numeric(length = P)
@@ -333,9 +333,9 @@ I <- numeric(length = P)
 # Calculate immigration
 # loop through patches (for each patch, simulate dispersal)
 for(p in 1:P){
-  
+
   if(E[p]>0) {
-    
+
     # sample the sites that receive immigrants from site i based on the dispersal kernel
     # this also adds stochasticity to the model
     dest <- sample(1:P, E[p], replace=TRUE, prob=disp_mat[p,])
@@ -366,9 +366,9 @@ for(t in 2:tmax){
   print(paste(t, ' of ', tmax))
   rN <- round(r * N[t-1,])
   # what about stochastic population growth?
-  # rN <- round(rnorm(1, 0, 0.2) * N[t-1,]) 
+  # rN <- round(rnorm(1, 0, 0.2) * N[t-1,])
   N[t, ] <- N[t-1] + rN
-  E <- rbinom(n = ncol(N), size = N[t, ], prob = d)
+  E <- rbinom(n = ncol(N), size = N[t, ], prob = a)
   I <- numeric(P)
   for(p in 1:P){
     if(E[p]>0) {
@@ -404,7 +404,7 @@ plot(x = seq(0,1,0.01),
 
 # with the function from the Thompson model
 S = 10 # number of species
-env_traits(species = S, 
+env_traits(species = S,
            max_r = 5,                         # max growth rate
            min_env = 0, max_env = 1,          # range of environment
            env_niche_breadth = 0.05,       # niche breadth
@@ -425,7 +425,7 @@ meta_landscape <- landscape_generate(patches = M)
 d = 0.1
 disp_mat <- dispersal_matrix(landscape = disp_experiment,
                                   torus = TRUE,
-                                  kernel_exp = d,  
+                                  kernel_exp = d,
                                   plot = TRUE)
 
 # generate the time series of the environmental conditions for each patch (same for each treatment)
@@ -435,13 +435,13 @@ env_conditions <- env_generate(landscape = disp_experiment,
                                timesteps = 1000)
 
 # density independent component of model
-densInd_niche <- env_traits(species = S, 
+densInd_niche <- env_traits(species = S,
                             max_r = 5,                         # max growth rate
                             min_env = 0, max_env = 1,          # range of environment
                             env_niche_breadth = 0.25,       # niche breadth
                             optima_spacing = 'even')           # spacing of z_i (optima)
 
-# species interaction matrix: 
+# species interaction matrix:
 # TODO: create more matrices for other dynamics in the paper (mixed, competitive dominance, destabilising competition)
 equal_interaction_mat <- species_int_mat(species = S,
                                          intra = 1,
@@ -454,35 +454,35 @@ stabilising_interaction_mat <- species_int_mat(species = S,
                                          max_inter = 0.8)
 
 # use simulateMC() function to simulate dynamics
-sim_equal_comp <- simulate_MC(patches=P, species=S, 
+sim_equal_comp <- simulate_MC(patches=P, species=S,
                         landscape = meta_landscape,
-                        disp_mat = disp_mat, 
-                        env.df = env_conditions, 
-                        max_r = densInd_niche$max_r, 
+                        disp_mat = disp_mat,
+                        env.df = env_conditions,
+                        max_r = densInd_niche$max_r,
                         env_niche_breadth = densInd_niche$env_niche_breadth,
                         env_optima = densInd_niche$optima,
                         int_mat = equal_interaction_mat,
                         initialization=100, burn_in=300, timesteps=600)
 
-sim_stabil_comp <- simulate_MC(patches=P, species=S, 
+sim_stabil_comp <- simulate_MC(patches=P, species=S,
                               landscape = meta_landscape,
-                              disp_mat = disp_mat, 
-                              env.df = env_conditions, 
-                              max_r = densInd_niche$max_r, 
+                              disp_mat = disp_mat,
+                              env.df = env_conditions,
+                              max_r = densInd_niche$max_r,
                               env_niche_breadth = densInd_niche$env_niche_breadth,
                               env_optima = densInd_niche$optima,
                               int_mat = stabilising_interaction_mat,
                               initialization=100, burn_in=300, timesteps=600)
 
 # extract data
-sim_equalC_dat <- sim_equal_comp$dynamics.df %>% 
-  as_tibble() %>% 
+sim_equalC_dat <- sim_equal_comp$dynamics.df %>%
+  as_tibble() %>%
   # reduce to last 100 time steps
   filter(time > 499 & time < 601)
 
 
-sim_stabilC_dat <- sim_stabil_comp$dynamics.df %>% 
-  as_tibble() %>% 
+sim_stabilC_dat <- sim_stabil_comp$dynamics.df %>%
+  as_tibble() %>%
   # reduce to last 100 time steps
   filter(time > 499 & time < 601)
 
@@ -499,17 +499,17 @@ ggplot() +
 ggplot() +
   facet_wrap(~patch) +
   geom_line(data = sim_equalC_dat,
-            aes(x = time, y = N, colour = optima, 
+            aes(x = time, y = N, colour = optima,
                 group = interaction(species, patch))) +
   scale_colour_viridis_c()
 
 ggplot() +
   facet_wrap(~patch) +
   geom_line(data = sim_stabilC_dat,
-            aes(x = time, y = N, colour = optima, 
+            aes(x = time, y = N, colour = optima,
                 group = interaction(species, patch))) +
   scale_colour_viridis_c()
 
-# Exercises: 
+# Exercises:
 # Simulate dynamics according to the classic metacommunity paradigms (Fig 2 in paper) and plot
-# 
+#
