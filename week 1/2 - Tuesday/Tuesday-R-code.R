@@ -245,7 +245,7 @@ r <- 0.02
 # define the per-capita probabilty of dispersal (i.e., probability of an individual emigrating)
 a <- 0.02
 
-# Assume that successfully arriving in another patch (having emigrated) declines exponentially with increasind distance
+# Assume that successfully arriving in another patch (having emigrated) declines exponentially with increasing distance
 # Define the rate of exponential distance decay
 d <- 0.1
 # visual inspection of exponential distance decay in dispersal
@@ -267,7 +267,8 @@ lines(x = 1:M,
 disp_mat <- exp(-d * dists)
 diag(disp_mat) <- 0 # all emigrants are assumed to have left their home patch
 
-# convert to probability of immigrating to each patch from every other patch
+# convert to probability of immigrating to each patch from every other patch,
+# this ensures that all emigrants arrive in a patch
 disp_mat <- apply(disp_mat, 1, function(x) x / sum(x))
 
 # check that we have a probability (should sum to one)
@@ -429,7 +430,7 @@ disp_mat <- dispersal_matrix(landscape = disp_experiment,
                                   plot = TRUE)
 
 # generate the time series of the environmental conditions for each patch (same for each treatment)
-# TODO: create an alternate environment with stronger temporal autocorrelation
+# Project idea: How does temporal environmental autocorrelation impact population, community or metacommunity dynamics / patterns?
 env_conditions <- env_generate(landscape = disp_experiment,
                                env1Scale = 1, # temporal autocorrelation in the environment (here the environment is temporally uncorrelated)
                                timesteps = 1000)
@@ -442,7 +443,8 @@ densInd_niche <- env_traits(species = S,
                             optima_spacing = 'even')           # spacing of z_i (optima)
 
 # species interaction matrix:
-# TODO: create more matrices for other dynamics in the paper (mixed, competitive dominance, destabilising competition)
+# Project idea: examine the impact of alternate competition scenarios
+# e.g., create  matrices for other dynamics in the paper (mixed, competitive dominance, destabilising competition)
 equal_interaction_mat <- species_int_mat(species = S,
                                          intra = 1,
                                          min_inter = 1,
@@ -512,4 +514,4 @@ ggplot() +
 
 # Exercises:
 # Simulate dynamics according to the classic metacommunity paradigms (Fig 2 in paper) and plot
-#
+
