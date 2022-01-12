@@ -1,7 +1,12 @@
 ## Morning session
 
-Measure of Biodiversity I
+Measurement of Biodiversity I
 
 ## Afternoon session  
 
-Measure of Biodiversity II
+Measurement of Biodiversity II
+
+
+
+
+
