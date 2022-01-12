@@ -1,1 +1,1 @@
-## Afternoon: Presentation
+## Afternoon: Presentation of projects
