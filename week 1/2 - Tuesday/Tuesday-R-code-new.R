@@ -280,7 +280,9 @@ gridded(xy) <- ~x+y
 coords0 <- coordinates(xy)
 
 # Other spatial structures
-xy <- spsample(SpatialPoints(coords0), P, "regular") # regular, clustered, random
+xy <- spsample(x = SpatialPoints(coords0), 
+               n = P, 
+               type = "regular") # regular, clustered, random
 coords <- coordinates(xy)
 plot(coords,cex=3)
 text(coords[,1],coords[,2],1:P)
@@ -376,7 +378,7 @@ E <- round(a * N)
 
 # stochastic alternative
 # E <- 
-rbinom(length(N), size = N, prob = a)
+# rbinom(length(N), size = N, prob = a)
 
 # create immigration vector (to store number of immigrants)
 I <- numeric(length = P)
@@ -445,7 +447,7 @@ rmax = 5
 # niche optima
 z = 0.5
 # niche breath
-breadth <- 0.01
+breadth <- 0.4
 plot(x = seq(0,1,0.01),
      y = exp(-((z - seq(0,1,0.01))/(2 * breadth))^2) * rmax,
      ylim=c(0,5),
@@ -454,11 +456,13 @@ plot(x = seq(0,1,0.01),
      ylab = 'Density independent growth rate (r)')
 
 # with the function from the Thompson model
+library(mcomsimr)
+
 S = 10 # number of species
 env_traits(species = S,
            max_r = 5,                         # max growth rate
            min_env = 0, max_env = 1,          # range of environment
-           env_niche_breadth = 0.05,       # niche breadth
+           env_niche_breadth = 0.5,       # niche breadth
            optima_spacing = 'even')           # spacing of z_i (optima)
 
 
@@ -469,19 +473,19 @@ P = 20
 S = 20
 
 # set up landscape for experiment (want the same landscape for both treatments)
-meta_landscape <- landscape_generate(patches = M)
+meta_landscape <- landscape_generate(patches = P)
 
 # dispersal matrix
 # set rate of distance decay
 d = 0.1
-disp_mat <- dispersal_matrix(landscape = disp_experiment,
+disp_mat <- dispersal_matrix(landscape = meta_landscape,
                              torus = TRUE,
                              kernel_exp = d,
                              plot = TRUE)
 
 # generate the time series of the environmental conditions for each patch (same for each treatment)
 # Project idea: How does temporal environmental autocorrelation impact population, community or metacommunity dynamics / patterns?
-env_conditions <- env_generate(landscape = disp_experiment,
+env_conditions <- env_generate(landscape = meta_landscape,
                                env1Scale = 1, # temporal autocorrelation in the environment (here the environment is temporally uncorrelated)
                                timesteps = 1000)
 
@@ -489,7 +493,7 @@ env_conditions <- env_generate(landscape = disp_experiment,
 densInd_niche <- env_traits(species = S,
                             max_r = 5,                         # max growth rate
                             min_env = 0, max_env = 1,          # range of environment
-                            env_niche_breadth = 0.25,       # niche breadth
+                            env_niche_breadth = 0.2,       # niche breadth
                             optima_spacing = 'even')           # spacing of z_i (optima)
 
 # species interaction matrix:
@@ -507,6 +511,7 @@ stabilising_interaction_mat <- species_int_mat(species = S,
 
 # use simulateMC() function to simulate dynamics
 sim_equal_comp <- simulate_MC(patches=P, species=S,
+                              dispersal = 0.1,
                               landscape = meta_landscape,
                               disp_mat = disp_mat,
                               env.df = env_conditions,
@@ -515,8 +520,10 @@ sim_equal_comp <- simulate_MC(patches=P, species=S,
                               env_optima = densInd_niche$optima,
                               int_mat = equal_interaction_mat,
                               initialization=100, burn_in=300, timesteps=600)
+?simulate_MC
 
 sim_stabil_comp <- simulate_MC(patches=P, species=S,
+                               dispersal = 0.1,
                                landscape = meta_landscape,
                                disp_mat = disp_mat,
                                env.df = env_conditions,
@@ -525,6 +532,8 @@ sim_stabil_comp <- simulate_MC(patches=P, species=S,
                                env_optima = densInd_niche$optima,
                                int_mat = stabilising_interaction_mat,
                                initialization=100, burn_in=300, timesteps=600)
+
+str(sim_equal_comp)
 
 # extract data
 sim_equalC_dat <- sim_equal_comp$dynamics.df %>%
