@@ -27,4 +27,5 @@ If the shiny app does not appear or if it crashes, please send me an email: alba
 
 ## Afternoon session
 
-Description of the project to prepare for Friday afternoon.
+Description of the projects to prepare for Friday afternoon.
+Group assignments, and help getting started (we're there to help you)
