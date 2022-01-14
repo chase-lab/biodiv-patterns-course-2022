@@ -1,10 +1,16 @@
-## Morning session
+## Morning session (10:00h - 12:30h)
 
-Measurement of Biodiversity I
+- How can we describe biodiversity numerically?  
+- Accumulation curves and the Species Abundance Distribution
+- R packages for calculating bioidversity metrics
+- Calculating compositional differences between samples
 
-## Afternoon session  
 
-Measurement of Biodiversity II
+## Afternoon session (13:15h -  max 16:00h)
+
+Measuring and comparing biodiversity in the meta-community model(s) from week 1, 
+including reshaping data to fit your needs  
+
 
 
 
