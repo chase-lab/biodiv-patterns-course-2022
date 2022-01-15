@@ -5,7 +5,7 @@ I. Lecture (see ppt)
 II. Readings (see pdfs)
 
 
-## Part 2. 1pm-3pm: Discussion and lab excercise
+## Part 2. 12:30pm-3pm: Discussion and lab excercise
 
 I. Discussion of data from last week's trees
 
