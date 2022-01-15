@@ -1,3 +1,12 @@
-## Morning session
+## Part 1. 10am-12pm: What is biodiversity? How do you measure and compare it?
 
-## Afternoon session
+I. Lecture (see ppt)
+
+II. Readings (see pdfs)
+
+
+## Part 2. 1pm-3pm: Discussion and lab excercise
+
+I. Discussion of data from last week's trees
+
+II. Lab Excercise 
