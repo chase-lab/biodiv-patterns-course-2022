@@ -7,6 +7,6 @@ II. Readings (see pdfs)
 
 ## Part 2. 12:30pm-3pm: Discussion and lab excercise
 
-I. Discussion of data from last week's trees
+I. Discussion of papers, data from last week's trees
 
 II. Lab Excercise 
