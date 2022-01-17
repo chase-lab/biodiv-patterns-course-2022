@@ -9,5 +9,7 @@ https://meet.jit.si/ChaseLabSocialDistancingLunchBreak
 ## 15:00 - 16:00 Project presentations:
 
 Please do not present longer than 15 minutes. 
+
 15:00h Group 1
+
 15:30h Group 2
