@@ -1,4 +1,4 @@
-## Morning session (09:30h - 12:00h)
+## Morning session (10:00h - 12:00h)
 
 - How can we describe biodiversity numerically?  
 - Accumulation curves and the Species Abundance Distribution
@@ -6,7 +6,7 @@
 - Calculating compositional differences between samples
 
 
-## Afternoon session (13:00h -  max 16:00h)
+## Afternoon session (13:00h -  max 16:30h)
 
 Measuring and comparing biodiversity in the meta-community model(s) from week 1,
 including reshaping data to fit your needs  
