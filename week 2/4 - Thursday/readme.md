@@ -1,6 +1,6 @@
 # Project
 
-Log in here, at the times below to get help: 
+Log in here, at the times indicated for you group, to get help: 
 https://meet.jit.si/ChaseLabSocialDistancingLunchBreak 
 
 ## 11:00h - 11:30h 
