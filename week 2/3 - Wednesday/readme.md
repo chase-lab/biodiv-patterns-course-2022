@@ -56,4 +56,5 @@ You will need raw data that provide for each species the abundance in each plot 
 Find publication (Google scholar, Web of Science (university access)) -> data repo 
 Repositories (Dryad, NERC, EDI, LTER) -> find paper that belongs to it. 
 
-
+Some code about data extraction in R can be found in this page:  
+https://github.com/chase-lab/biodiv-patterns-course-2021/tree/main/week%202/3%20-%20Wednesday
