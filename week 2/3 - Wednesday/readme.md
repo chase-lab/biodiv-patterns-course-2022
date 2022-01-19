@@ -65,7 +65,7 @@ What we expect for the presentation:
 
 1) question
 2) Methods (explanation of datasets, how did you analyse them? which metrics did you extract? etc.) 
-3) Results 
+3) Results with graphs 
 4) Conclusions.
 
 
