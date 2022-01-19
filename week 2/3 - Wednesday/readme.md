@@ -58,3 +58,18 @@ Repositories (Dryad, NERC, EDI, LTER) -> find paper that belongs to it.
 
 Some code about data extraction in R can be found in this page:  
 https://github.com/chase-lab/biodiv-patterns-course-2021/tree/main/week%202/3%20-%20Wednesday
+
+
+
+What we expect for the presentation: 
+
+1) question
+2) Methods (explanation of datasets, how did you analyse them? which metrics did you extract? etc.) 
+3) Results 
+4) Conclusions.
+
+
+
+
+
+
