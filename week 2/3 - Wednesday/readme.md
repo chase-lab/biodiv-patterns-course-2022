@@ -27,5 +27,7 @@ If the shiny app does not appear or if it crashes, please send me an email: alba
 
 ## Afternoon session
 
-Description of the projects to prepare for Friday afternoon.
+Description of the projects to prepare for Friday afternoon.  
 Group assignments, and help getting started (we're there to help you)
+
+Some code about data extraction in R can be found in this page: https://github.com/chase-lab/biodiv-patterns-course-2021/tree/main/week%202/3%20-%20Wednesday
