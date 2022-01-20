@@ -11,4 +11,4 @@
   - Additional estimations of functional trait diversity: trait-value-based approach
   - Multidimensional trait space and species trait combinations
   - Plant strategies according to their traits
-  - Exercise: Functional richness, evenness, dispersion (Cornwell et al. 2006 approach and Blonder et al approach)
+  - Exercise: Functional richness, evenness, dispersion (Cornwell et al 2006 approach and Blonder et al approach)
