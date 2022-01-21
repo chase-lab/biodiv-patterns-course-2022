@@ -3,7 +3,7 @@
   - Lecture and discussion on Ecosystem Functioning 
 
 ## Morning : Form discussion and debate groups 11:00-11:30
-Before, class please read two papers, and make some notes;
+Before class please read two papers- and make some notes;
 1. [Paper 1](https://onlinelibrary.wiley.com/doi/epdf/10.1111/jvs.12399)
 2. [Paper 2](https://onlinelibrary.wiley.com/doi/epdf/10.1111/jvs.12435)
 
