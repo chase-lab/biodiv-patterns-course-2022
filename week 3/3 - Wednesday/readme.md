@@ -1,8 +1,8 @@
-## Morning: Introduction to Ecosystem Functioning
+## Morning: Introduction to Ecosystem Functioning 10:00- 11:00
   
   - Lecture and discussion on Ecosystem Functioning 
 
-## Morning : Form discussion and debate groups
+## Morning : Form discussion and debate groups 11:00-11:30
 Before, class please read two papers, and make some notes;
 1. [Paper 1](https://onlinelibrary.wiley.com/doi/epdf/10.1111/jvs.12399)
 2. [Paper 2](https://onlinelibrary.wiley.com/doi/epdf/10.1111/jvs.12435)
@@ -13,18 +13,18 @@ Before, class please read two papers, and make some notes;
 - Each member of the team should be prepared to make some points in the debate
 - An instructor will also join each group
 
-## Morning: Introduction to Ecosystem Functioning Experiments
+## Morning: Introduction to Ecosystem Functioning Experiments 11:30-12:00
 
 - Lecture and discussion on the ways people study measures of ecosystem function
 
-## Afternoon: Debate
+## Afternoon: Debate 13:00-14:00
 
 - Engage in a half hour debate defending and reasoning each perspective 
 
-## Afternoon: Activity
+## Afternoon: Activity 14:00-15:00
 
   - Measuring and comparing ecosystem function in experimental data
   
-## Afternoon: Projects
+## Afternoon: Projects 15-16:00
 -Instructors will present three options for student projects at the end of the day
 - Question and discussion period
