@@ -18,7 +18,7 @@ Before, class please read two papers, and make some notes;
 - Lecture and discussion on the ways people study measures of ecosystem function
 
 ## Afternoon: Debate 13:00-14:00
-
+- Prepare for debate
 - Engage in a half hour debate defending and reasoning each perspective 
 
 ## Afternoon: Activity 14:00-15:00
