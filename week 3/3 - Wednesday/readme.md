@@ -1,3 +1,8 @@
+
+## Wednesday January 26, 2022
+
+Instructors: Dr. Daniela Hoss (danielahoss@gmail.com); Dr. Emma Ladouceur (emma.ladouceur@idiv.de)
+
 ## Morning: Introduction to Ecosystem Functioning 10:00- 11:00
   
   - Lecture and discussion on Ecosystem Functioning 

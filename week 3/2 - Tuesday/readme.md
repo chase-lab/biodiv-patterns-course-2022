@@ -1,3 +1,9 @@
+
+## Tuesday January 25, 2022
+
+Instructors: Dr. Paola Barajas (paola.barajas@idiv.de); Dr. Emma Ladouceur (emma.ladouceur@idiv.de)
+
+
 ## Part I: Introduction to Functional Trait Diversity (10 – 12)
   
   - Facets of biodiversity, how do they complement taxonomic diversity?
