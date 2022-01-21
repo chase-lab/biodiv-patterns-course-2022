@@ -43,4 +43,13 @@ Alternative Hypothesis 2: Diversity and/or functional diversity will influence t
 
 
 
-## Afternoon session
+## Afternoon session (starts at 12pm)
+
+12.00-13.00 Presentation and discussion of data from 'duck lab'
+
+13.00-14.00 Lecture (see ppt)
+
+14.00-15.00 Readings (see pdfs)
+
+15.00-16.00 Discussion
+
