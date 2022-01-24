@@ -69,9 +69,7 @@ ggplot(data = plot, aes(x = Treatment, y = rich.plot)) +
   geom_boxplot(alpha = 0.2) +
   labs(y = "Plot Richness") +
   theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-                     strip.background = element_rect(colour="black", fill="white"),legend.position="bottom",
-                     axis.text.y=element_blank(),
-                     axis.ticks.y=element_blank())
+                     strip.background = element_rect(colour="black", fill="white"),legend.position="bottom")
 
 
 
@@ -183,11 +181,22 @@ s54
 
 
 ggplot(data= pp.wrangle, aes(x = seed.rich, y = SG)) +
-  geom_boxplot(aes(color = seed.rich))
+  geom_point(position = position_jitter(0.2), alpha= 0.5, color = "#C0C0C0") +
+  geom_boxplot(aes(color = seed.rich), alpha = 0.2) +
+  theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+                     strip.background = element_rect(colour="black", fill="white"),legend.position="bottom")
 
 ggplot(data= pp.wrangle, aes(x = seed.rich, y = CDE)) +
-  geom_boxplot(aes(color = seed.rich))
+  geom_point(position = position_jitter(0.2), alpha= 0.5, color = "#C0C0C0") +
+  geom_boxplot(aes(color = seed.rich), alpha = 0.2) +
+  theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+                     strip.background = element_rect(colour="black", fill="white"),legend.position="bottom",)
 
 ggplot(data= pp.wrangle, aes(x = seed.rich, y = s.gain)) +
-  geom_boxplot(aes(color = seed.rich))
+  geom_point(position = position_jitter(0.2), alpha= 0.5, color = "#C0C0C0") +
+  geom_boxplot(aes(color = seed.rich), alpha = 0.2) +
+  theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+                     strip.background = element_rect(colour="black", fill="white"),legend.position="bottom")
 
+
+# Example Paper: https://doi.org/10.22541/au.164197604.41103734/v1
