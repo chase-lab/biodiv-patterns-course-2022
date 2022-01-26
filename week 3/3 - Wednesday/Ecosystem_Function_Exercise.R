@@ -17,7 +17,7 @@ setwd("~/Downloads/")
 # species level data from 12 seed addition experiments
 sp <- read.csv("SeedAdd_Sp_level.csv", header= TRUE)
 
-
+View(sp)
 head(sp)
 colnames(sp)
 
@@ -180,6 +180,9 @@ s54 <- leap.zig(div.54,type='cafe',standardize = FALSE, raw.points = F)+
 s54
 
 
+View(pp.wrangle)
+
+
 ggplot(data= pp.wrangle, aes(x = seed.rich, y = SG)) +
   geom_point(position = position_jitter(0.2), alpha= 0.5, color = "#C0C0C0") +
   geom_boxplot(aes(color = seed.rich), alpha = 0.2) +
@@ -200,3 +203,8 @@ ggplot(data= pp.wrangle, aes(x = seed.rich, y = s.gain)) +
 
 
 # Example Paper: https://doi.org/10.22541/au.164197604.41103734/v1
+
+
+# https://onlinelibrary.wiley.com/doi/full/10.1111/ele.12895
+
+
