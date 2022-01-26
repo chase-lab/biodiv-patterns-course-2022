@@ -20,6 +20,7 @@ Before class please read two papers- and make some notes;
 - Discuss and organise main points for afternoon debate
 - Each member of the team should be prepared to make some points in the debate
 - An instructor will also join each group
+- Debate Jam board [Team Wardle](https://jamboard.google.com/d/1psDyw_SY2w_LIFFGaNCwkM7z7L1GY2g264fR_2Vq-O4/edit?usp=sharing) and [Team Eisenhauer](https://jamboard.google.com/d/1ih2Fc8Jd-Ql3mYYlL7ncuqYhfCxso9DygJStNwChoXY/edit?usp=sharing)
 
 ## Morning: Introduction to Ecosystem Functioning Experiments 11:30-12:00
 
