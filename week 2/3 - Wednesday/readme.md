@@ -13,7 +13,7 @@ Please, BEFORE THE CLASS:
 ### MoBsim
 Please, BEFORE THE CLASS, run the following R code to install packages in preparation of our exercise with MoBsim:
 ```
-install.packages(c('shiny', 'shinyBS','pals','shinyjs', 'devtools'))
+install.packages(c('shiny', 'shinyBS','pals','shinyjs', 'devtools','DT','markdown'))
 devtools::install_github('albansagouis/mobsim@master')
 ```
 Please, DO NOT install `mobsim` through `install.packages("mobsim")`.
